@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>अपॉइंटमेंट</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header"></div>
+  <section><div class="container">
+    <h2 class="title">अपॉइंटमेंट बुक करा</h2>
+    <form id="appointmentForm">
+      <label>पूर्ण नाव</label><input type="text" name="name" required>
+      <label>मोबाईल नंबर</label><input type="tel" name="phone" maxlength="10" required>
+      <label>तारीख</label><input type="date" name="date" id="date" required>
+      <label>तपासणी प्रकार</label><select id="category" required></select>
+      <label>तपासणी निवडा</label><select id="test" required></select>
+      <button class="btn primary" type="submit">बुक करा</button>
+      <div id="msg" class="msg"></div>
+    </form>
+  </div></section>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
